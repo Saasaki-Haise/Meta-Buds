@@ -319,14 +319,14 @@ footer {
     .hero .heroD {
         border: 1px solid black;
         width: 100%;
-        height: 300px;
+        height: 500px;
         background-image: url(img/heroo.png);
         background-size: contain;
     }
     .hero .heroG {
         border: 1px solid black;
         width: 100%;
-        height: 800px;
+        height: 1300px;
     }
 
     .hero .heroG div h1 {
@@ -334,7 +334,7 @@ footer {
     }
 
     .discord {
-        height: 250px;
+        height: 220px;
     }
     .team__flex {
         flex-direction: column;

@@ -302,19 +302,40 @@ footer {
 
 /* Responsive */
 @media all and (max-width: 767px) {
-    .hero .heroD {
-        display: none;
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        border: 1px solid blue;
+        height: 80vh;
+        margin: 0;
     }
-
-    .hero .heroD, .hero .heroG {
+    .hero .logo {
+        color: #7FB77E;
+        border: 1px solid pink;
+    }
+    .hero .socials ul li {
+        background-color: #F7F6DC;
+    }
+    .hero .heroD {
+        border: 1px solid black;
         width: 100%;
-        height: 100%;
+        height: 300px;
+        background-image: url(img/heroo.png);
+        background-size: contain;
+    }
+    .hero .heroG {
+        border: 1px solid black;
+        width: 100%;
+        height: 800px;
     }
 
     .hero .heroG div h1 {
         font-size: 2rem;
     }
 
+    .discord {
+        height: 250px;
+    }
     .team__flex {
         flex-direction: column;
     }

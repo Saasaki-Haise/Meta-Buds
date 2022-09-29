@@ -305,7 +305,7 @@ footer {
     .hero {
         display: flex;
         flex-direction: column-reverse;
-        height: 80vh;
+        height: 85vh;
         margin: 0;
     }
     .hero .logo {
@@ -316,13 +316,13 @@ footer {
     }
     .hero .heroD {
         width: 100%;
-        height: 450px;
+        height: 350px;
         background-image: url(img/heroo.png);
-        background-size: contain;
+        background-size: cover;
     }
     .hero .heroG {
         width: 100%;
-        height: 1350px;
+        height: 800px;
     }
 
     .hero .heroG div h1 {

@@ -72,6 +72,9 @@ a .btn {
     width: 65%;
     height: 100%;
 }
+.hero .heroD .bann {
+    display: none;
+}
 
 .hero .heroG {
     width: 35%;
@@ -199,7 +202,9 @@ a .btn {
 .roadmap p {
     line-height: 1.5rem;
 }
-
+.roadmap ul {
+    margin: 1rem;
+}
 .roadmap .number {
     position: absolute;
     top: -1rem;
@@ -305,7 +310,7 @@ footer {
     .hero {
         display: flex;
         flex-direction: column-reverse;
-        height: 85vh;
+        height: 80vh;
         margin: 0;
     }
     .hero .logo {
@@ -316,13 +321,20 @@ footer {
     }
     .hero .heroD {
         width: 100%;
-        height: 350px;
-        background-image: url(img/heroo.png);
-        background-size: cover;
+        height: 150px;
+        background-image: none;
+    }
+    .hero .heroD .bann {
+        height: 200px;
+        display: block;
+    }
+    .hero .heroD .bann img {
+        margin-top: 65px;
+        width: 100%;
     }
     .hero .heroG {
         width: 100%;
-        height: 800px;
+        height: 600px;
     }
 
     .hero .heroG div h1 {

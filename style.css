@@ -315,8 +315,12 @@ footer {
     }
     .hero .logo {
         color: #7FB77E;
-        left: 2.5rem;
+        left: 0.5rem;
         font-size: 1.5rem;
+    }
+    .hero .logo img {
+        height: 15px;
+        margin-right: 5px;
     }
     .hero .socials {
         position: absolute;
@@ -330,12 +334,12 @@ footer {
         background-color: #f7f6dc00;
     }
     .hero .heroD {
-        margin-top: 30px;
+        background-color: #FFC090;
+        margin-top: 50px;
         width: 100%;
         height: 250px;
         background-image: url(img/twitter-banner_1.jpg);
         background-size: contain;
-        background-position: bottom;
     }
     .hero .heroD .bann {
         display: none;

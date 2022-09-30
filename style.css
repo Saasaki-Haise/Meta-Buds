@@ -310,31 +310,39 @@ footer {
     .hero {
         display: flex;
         flex-direction: column-reverse;
-        height: 90vh;
+        height: 75vh;
         margin: 0;
     }
     .hero .logo {
         color: #7FB77E;
+        left: 2.5rem;
+        font-size: 1.5rem;
+    }
+    .hero .socials {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+    }
+    .hero .socials ul {
+        font-size: 1rem;
     }
     .hero .socials ul li {
-        background-color: #F7F6DC;
+        background-color: #f7f6dc00;
     }
     .hero .heroD {
+        margin-top: 35px;
         width: 100%;
-        height: 150px;
-        background-image: none;
+        height: 200px;
+        background-image: url(img/twitter-banner_1.jpg);
+        background-size: contain;
+        background-position: bottom;
     }
     .hero .heroD .bann {
-        height: 200px;
-        display: block;
-    }
-    .hero .heroD .bann img {
-        margin-top: 65px;
-        width: 100%;
+        display: none;
     }
     .hero .heroG {
         width: 100%;
-        height: 600px;
+        height: 100%;
     }
 
     .hero .heroG div h1 {

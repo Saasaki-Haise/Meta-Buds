@@ -168,7 +168,10 @@ a .btn {
     background: var(--color2);
     text-align: center;
 }
-
+.discord .btn a {
+    color: #F7F6DC;
+    text-decoration: none;
+}
 .discord h2 {
     margin: 1rem;
     padding: 1.5rem;
@@ -390,7 +393,7 @@ footer {
     .hero {
         display: flex;
         flex-direction: column-reverse;
-        height: 80vh;
+        height: 85vh;
         margin: 0;
     }
     .hero .logo {
@@ -415,7 +418,6 @@ footer {
     }
     .hero .heroD {
         background-color: #FFC090;
-        border: 1px solid blue;
         margin-top: 50px;
         width: 100%;
         height: 220px;

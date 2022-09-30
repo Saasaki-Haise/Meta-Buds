@@ -463,7 +463,7 @@ footer {
     .hero {
         display: flex;
         flex-direction: column-reverse;
-        height: 80vh;
+        height: 85vh;
         margin: 0;
     }
     .hero .logo {

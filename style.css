@@ -125,7 +125,10 @@ a .btn {
     font-size: 2rem;
     font-weight: 700;
 }
-
+.hero .logo img {
+    height: 20px;
+    margin-right: 10px;
+}
 .hero .socials {
     position: absolute;
     top: 1rem;

@@ -125,9 +125,11 @@ a .btn {
     font-size: 2rem;
     font-weight: 700;
 }
-.hero .logo img {
-    height: 20px;
-    margin-right: 10px;
+.hero .logo .hamburger-icon {
+    height: 2px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 .hero .socials {
     position: absolute;
@@ -188,20 +190,20 @@ a .btn {
    
 }
 
-/* RoadMap */
-.roadmap {
+/* # */
+#roadmap {
     background: var(--color1);
     padding: 4rem 0;
     color: var(--color2);
 }
 
-.roadmap h2 {
+#roadmap h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
     text-align: center;
 }
 
-.roadmap .bloc {
+#roadmap .bloc {
     background: var(--color4);
     margin-bottom: 3rem;
     padding: 1rem;
@@ -209,17 +211,17 @@ a .btn {
     margin-left: 2px;
 }
 
-.roadmap h4 {
+#roadmap h4 {
     margin: 1rem 0;
 }
 
-.roadmap p {
+#roadmap p {
     line-height: 1.5rem;
 }
-.roadmap ul {
+#roadmap ul {
     margin: 1rem;
 }
-.roadmap .number {
+#roadmap .number {
     position: absolute;
     top: -1rem;
     left: calc(1rem - 1px);
@@ -233,12 +235,12 @@ a .btn {
     align-items: center;
 }
 
-.roadmap .number.off {
+#roadmap .number.off {
     background: var(--color2);
     color: var(--color3);
 }
 
-.roadmap .container {
+#roadmap .container {
     position: relative;
 }
 
@@ -251,40 +253,41 @@ a .btn {
     top: 30px;
 }
 
-/* Team */
-.team {
+/* TEAM */
+#team {
     padding: 4rem 0;
 }
 
-.team h2 {
+#team h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
     text-align: center;
 }
 
-.team .team__flex {
+#team .team__flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.team .member {
-    width: 31%;
+#team .member {
+    padding: 20px;
+    width: 100%;
 }
 
-.team .member img {
+#team .member img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.team .member h4 {
+#team .member h4 {
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.team .member .job {
+#team .member .job {
     color: var(--color5);
     font-size: 1rem;
     font-weight: 300;
@@ -319,9 +322,233 @@ footer {
     text-decoration: none;
 }
 
+/* About_buds Style */
+/* Accueil */
+.hero_about {
+    height: 1400px;
+    display: flex;
+    align-items: center;
+}
+
+.hero_about .heroD {
+    border: 1px solid pink;
+    width: 100%;
+    height: 100%;
+}
+.hero_about .heroD .bann {
+    display: none;
+}
+
+.hero_about .heroG {
+    width: 100%;
+    height: 100%;
+}
+
+.hero_about .heroD {
+    background-image: url('img/hero-8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_about .heroG {
+    background: var(--color1);
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_about .heroG div {
+    width: 80%;
+}
+
+.hero_about .heroG div h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px #fe750d98;
+}
+
+.hero_about .heroG div p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    text-shadow: 1px 1px 2px #fe750d63;
+}
+
+.hero_about .logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--color2);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.hero_about .logo img {
+    height: 20px;
+    margin-right: 10px;
+}
+.hero_about .socials {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.hero_about .socials ul {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.hero_about .socials ul li {
+    margin-left: 1rem;
+    background: var(--color1);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.hero_about .socials ul li a {
+    color: var(--color3);
+    transition: color .5s;
+}
+
+.hero_about .socials ul li a:hover {
+    color: var(--color2);
+}
+
+.hero_about .socials ul {
+    display: flex;
+}
+
+
+
+/* MENU */
+.hamburger-icon {
+  height: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 2vw;
+  padding-bottom: 2vh;
+}
+
+.hamburger-icon span {
+  height: 5px;
+  width: 80px;
+  background-color: black;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.7s ease-in-out;
+  transform: none;
+}
+
+#openmenu:checked ~ .menu-pane {
+  left: -5vw;
+  transform: translateX(-5vw);
+}
+
+#openmenu:checked ~ .body-text {
+display: none;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: translate(0%, 175%) rotate(-45deg);
+  background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  opacity: 0;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+  opacity: 0;
+}
+
+div.menu-pane {
+  background-color: var(--color2);
+  position: absolute;
+  transform: translateX(-105vw);
+  transform-origin: (0, 0);
+  height: 300px;
+  width: 350px;
+  transition: 0.6s ease-in-out;
+}
+
+.menu-pane p {
+  color: black;
+  font-size: 0.6em;
+}
+
+.menu-pane nav {
+  padding: 0;
+}
+
+.menu-links li, a, span {
+      transition: 0.5s ease-in-out;
+}
+
+.menu-pane ul {
+    background-color: var(--color1);
+    height: 650px;
+    width: 360px;
+    display: inline-block;
+}
+
+.menu-pane li {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    font-size: 1em;
+}
+
+
+.menu-pane li:first-child {
+  font-size: 1.3em;
+  margin-left: 80px;
+}
+
+
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.menu-links li:hover a {
+  color: #FFAB91;
+}
+
+.menu-links li:first-child:hover a {
+  color: black;  
+  background-color: #FFAB91;
+}
+
+.menu-links li:first-child a {
+  padding: 5px;
+}
+
+
+
+input.hamburger-checkbox {
+  position: absolute;
+  z-index: 3;
+  top: 5vh;
+  left: 5vw;
+  width: 10vw;
+  opacity: 0;
+  height: 6vh;
+}
+
 /* Responsive MAX 767px*/
 @media all and (max-width: 767px) {
-    .hero {
+    .hero, .hero_about {
         display: flex;
         flex-direction: column-reverse;
         height: 80vh;
@@ -393,7 +620,7 @@ footer {
 
 /* Responsive MAX 391px*/
 @media all and (max-width: 391px) {
-    .hero {
+    .hero, .hero_about {
         display: flex;
         flex-direction: column-reverse;
         height: 85vh;
@@ -471,15 +698,43 @@ footer {
         height: 85vh;
         margin: 0;
     }
-    .hero .logo {
+    .hero_about {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 220vh;
+        margin: 0;
+    }
+    .hero_about .heroD {
+        display: none;
+    }
+    .hero .logo, .hero_about .logo {
+        width: 200px;
         color: #7FB77E;
-        left: 0.5rem;
+        left: 2rem;
         font-size: 1.5rem;
     }
-    .hero .logo img {
-        height: 15px;
-        margin-right: 5px;
+    .hero .logo .hamburger-icon, .hero_about .logo .hamburger-icon {
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: -1.8rem;
+        padding-bottom: 2vh;
     }
+    .hero .logo .hamburger-icon span, .hero_about .logo .hamburger-icon span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--color3);
+    }
+    input.hamburger-checkbox {
+        position: absolute;
+        z-index: 4;
+        top: 5px;
+        left: -45px;
+        opacity: 0;
+        height: 20px;
+      }
     .hero .socials {
         position: absolute;
         top: 0.5rem;
@@ -527,7 +782,8 @@ footer {
     }
 
     .team .member {
-        width: 100%;
+        width: 500px;
+        border: 1px solid blue;
     }
     .team .member img {
         height: 450px;

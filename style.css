@@ -546,22 +546,58 @@ input.hamburger-checkbox {
   height: 6vh;
 }
 
-/* Responsive MAX 767px*/
-@media all and (max-width: 767px) {
+/* Responsive MAX 765px*/
+@media all and (max-width: 765px) {
     .hero, .hero_about {
         display: flex;
         flex-direction: column-reverse;
-        height: 80vh;
+        height: 75vh;
         margin: 0;
     }
     .hero .logo {
         color: #7FB77E;
-        left: 0.5rem;
+        left: 2rem;
         font-size: 1.5rem;
     }
-    .hero .logo img {
-        height: 15px;
-        margin-right: 5px;
+    .hero .logo .hamburger-icon, .hero_about .logo .hamburger-icon {
+        border: 1px solid blue;
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: -1.8rem;
+        padding-bottom: 2vh;
+    }
+    .hero .logo .hamburger-icon span, .hero_about .logo .hamburger-icon span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--color3);
+    }
+    input.hamburger-checkbox {
+        position: absolute;
+        z-index: 4;
+        top: 5px;
+        left: -45px;
+        opacity: 0;
+        height: 20px;
+      }
+      .menu-pane ul {
+        border: 1px solid blue;
+        background-color: var(--color1);
+        height: 650px;
+        width: 345px;
+        display: inline-block;
+    }
+    div.menu-pane {
+        border: 1px solid palevioletred;
+        background-color: var(--color2);
+        position: absolute;
+        transform: translateX(-105vw);
+        transform-origin: (0, 0);
+        height: 100%;
+        width: 100%;
+        transition: 0.6s ease-in-out;
     }
     .hero .socials {
         position: absolute;
@@ -735,6 +771,125 @@ input.hamburger-checkbox {
         opacity: 0;
         height: 20px;
       }
+    .hero .socials {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+    }
+    .hero .socials ul {
+        font-size: 1rem;
+    }
+    .hero .socials ul li {
+        background-color: #f7f6dc00;
+    }
+    .hero .heroD {
+        background-color: #FFC090;
+        margin-top: 50px;
+        width: 100%;
+        height: 180px;
+        background-image: url(img/twitter-banner_1.jpg);
+        background-size: contain;
+    }
+    .hero .heroD .bann {
+        display: none;
+    }
+    .hero .heroG {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero .heroG div h1 {
+        font-size: 1.8rem;
+    }
+
+    .discord {
+        height: 220px;
+    }
+    .team__flex {
+        flex-direction: column;
+    }
+
+    .team__flex .member {
+        margin-bottom: 3rem;
+    }
+
+    .team__flex .member:last-child {
+        margin-bottom: 0;
+    }
+
+    .team .member {
+        width: 500px;
+        border: 1px solid blue;
+    }
+    .team .member img {
+        height: 450px;
+        padding: 20px;
+    }
+}
+
+/* Responsive MAX 360px*/
+@media all and (max-width: 360px) {
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 85vh;
+        margin: 0;
+    }
+    .hero_about {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 220vh;
+        margin: 0;
+    }
+    .hero_about .heroD {
+        display: none;
+    }
+    .hero .logo, .hero_about .logo {
+        width: 200px;
+        color: #7FB77E;
+        left: 2rem;
+        font-size: 1.5rem;
+    }
+    .hero .logo .hamburger-icon, .hero_about .logo .hamburger-icon {
+        border: 1px solid blue;
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: -1.8rem;
+        padding-bottom: 2vh;
+    }
+    .hero .logo .hamburger-icon span, .hero_about .logo .hamburger-icon span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--color3);
+    }
+    input.hamburger-checkbox {
+        position: absolute;
+        z-index: 4;
+        top: 5px;
+        left: -45px;
+        opacity: 0;
+        height: 20px;
+      }
+      .menu-pane ul {
+        border: 1px solid blue;
+        background-color: var(--color1);
+        height: 650px;
+        width: 345px;
+        display: inline-block;
+    }
+    div.menu-pane {
+        border: 1px solid palevioletred;
+        background-color: var(--color2);
+        position: absolute;
+        transform: translateX(-105vw);
+        transform-origin: (0, 0);
+        height: 100%;
+        width: 100%;
+        transition: 0.6s ease-in-out;
+    }
     .hero .socials {
         position: absolute;
         top: 0.5rem;
